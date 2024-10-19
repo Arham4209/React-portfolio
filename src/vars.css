@@ -2,10 +2,25 @@
   /* Colours */
   --color-text: #fff;
   --color-primary: #576cbc;
-  --color-secondary: #19376d;
-  --color-dark: #0b2447;
-  --color-bg: #04152d;
+  --color-secondary: #2e4c82;
+  --color-dark: #798eac;
+  --color-bg: #183661;
 
   /* Fonts */
+
+}
+/* vars.css */
+:root {
+  --color-text: #181616;
+  --color-bg: #e4d8d8;
+  --color-accent: #ffffff;
+  --color-menu-background: rgb(252, 252, 252);
   --font-roboto: "Roboto";
+}
+
+[data-theme="dark"] {
+  --color-text: #fff;
+  --color-bg: #0d2030;
+  --color-accent: #6923be;
+  --color-menu-background: rgba(6, 20, 46, 0.8);
 }

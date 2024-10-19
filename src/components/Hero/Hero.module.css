@@ -20,8 +20,8 @@
 }
 
 .title {
-  font-size: 72px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
   background: linear-gradient(
@@ -29,12 +29,18 @@
     rgba(255, 255, 255, 1) 70%,
     rgba(255, 255, 255, 0) 120%
   );
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   -webkit-background-clip: text;
+}
+@media(max-width:420px){
+  .title{
+    font-size:30px;
+  }
 }
 
 .description {
   font-size: 30px;
+  font-weight:0;
   font-family: var(--font-roboto);
   margin-bottom: 52px;
 }
@@ -43,19 +49,48 @@
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
-  border-radius: 100px;
+  border-radius: 20px;
   font-size: 30px;
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease ;
+  
 }
+.contactBtn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.35);
+  background-color: white;
+  color: black;
+}
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contactBtn:active {
+  animation: clickAnimation 0.2s ease;
+}
+/* .contactBtn:hover{
+  background-color: black;
+  color: white;
+  
+} */
 
 .heroImg {
   width: 50%;
   z-index: 1;
 
   animation-name: floating;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
@@ -65,7 +100,7 @@
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 10px);
+    transform: translate(0, 20px);
   }
   100% {
     transform: translate(0, -0px);
@@ -99,6 +134,39 @@
   filter: blur(100px);
   z-index: 0;
 }
+
+/* wave */
+
+.wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;    
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+/* For demonstration purposes only: */
+body { font-size: 3.5em }
+h1 { font-size: 0.5em }
+
+
+
+
+
 
 @media screen and (max-width: 830px) {
   .container {

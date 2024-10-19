@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
 .navbar {
   position: relative;
@@ -8,13 +9,17 @@
   padding-top: 61px;
   z-index: 2;
   margin: 0 10%;
+  
 }
 
+
+
 .title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
+  font-family: "Dancing Script", cursive;
   text-decoration: none;
-  color: var(--color-text);
+  color:var(--color-text);
 }
 
 
@@ -36,7 +41,50 @@
   font-size: 25px;
   color: var(--color-text);
   text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
 }
+
+.menuItems a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background: var(--color-text); 
+  transition: width 0.3s ease; 
+}
+
+.menuItems a:hover {
+  color:gray; 
+}
+.menuItems a:hover::after {
+  width: 100%; 
+  left: 0;
+  right: auto;
+}
+
+.themeToggle {
+  background: none;
+  border: 2px solid var(--color-text);
+  border-radius: 10px;
+  color: var(--color-text);
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.themeToggle:hover {
+  background: var(--color-text);
+  color: var(  --color-bg);
+}
+
+
+
+
 
 @media screen and (max-width: 830px) {
   .navbar {

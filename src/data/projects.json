@@ -1,26 +1,26 @@
 [
   {
-    "title": "Project A",
+    "title": "Movie Searching App",
+    "imageSrc": "projects/project.png",
+    "description": "This is a project made to learn the latest languages by building an app",
+    "skills": ["React", "useState", "useState"],
+    "demo": "https://65e23e655ca4461b097b6e0b--lovely-taiyaki-2f0f64.netlify.app/",
+    "source": "https://github.com/Arham4209/movie-searching-app"
+  },
+  {
+    "title": "Shopping List App",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
+    "skills": ["React", "API", "Get", "useState"],
+    "demo": "https://6664bd10dadd5024defe05b9--marvelous-salmiakki-39b501.netlify.app/",
     "source": "https://www.github.com"
   },
   {
-    "title": "Project B",
+    "title": "Weather App",
     "imageSrc": "projects/project.png",
     "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "skills": ["React", "Api", "Hook"],
+    "demo": "https://loquacious-tartufo-0c948a.netlify.app/",
+    "source": "https://github.com/Arham4209/Weather-app"
   }
 ]
